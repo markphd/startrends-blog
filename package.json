@@ -1,10 +1,10 @@
 {
-  "name": "Phantom",
-  "version": "5.0.0",
-  "description": "A minimalistic theme for Ghost inspired by the Designmodo Journal.",
+  "name": "Startrends",
+  "version": "1.0.0",
+  "description": "Theme for Startrends Blog based on Phantom Ghost theme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/haydenbleasel/ghost-themes.git"
+    "url": "https://github.com/markphd/startrends-blog.git"
   },
   "author": "Hayden Bleasel <haydenbleasel@gmail.com>",
   "bugs": {
