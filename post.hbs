@@ -1,0 +1,50 @@
+{{!< default}}
+
+{{#post}}
+
+    {{> post-meta}}
+
+    <header class="animated fadeIn" {{#if image}}style="background-image: url({{image}})"{{/if}}>
+        <div class="container" data-stellar-ratio="0.75">
+            {{> title}}
+            {{> sidebar}}
+        </div>
+    </header>
+
+    <div class="push-article">
+
+{{! Temporary indentation shift for Handlebars issue }}
+{{> content}}
+
+    </div>
+
+    <div class="container">
+        <div class="author animated fadeIn clearfix">
+            {{#author}}
+                <img src="{{image}}" alt="{{name}}" />
+                <div class="info">
+                    <a href="{{url}}" class="name">{{name}}</a>
+                    <p class="bio">{{bio}}</p>
+                </div>
+            {{/author}}
+        </div>
+    </div>
+
+    {{!> comments}}
+
+{{/post}}
+
+<div id="disqus_thread" class="container">
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'startrends-blog';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
